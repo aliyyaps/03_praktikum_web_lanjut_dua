@@ -11,7 +11,7 @@
             <div class="col-lg-12">
                 <div class="welcome-wrapper">
                     <h2 class="welcome-title text-uppercase">Welcome</h2>
-                    <img src="{{ aseet('asset/img/welcome-divider-lines.png') }}" alt="Welcome divider" class="welcome-divider-lines-img">
+                    <img src="{{ asset('asset/img/welcome-divider-lines.png') }}" alt="Welcome divider" class="welcome-divider-lines-img">
                     <p class="welcome-description">Healthy LifeStyle adalah suatu gaya hidup yang memperhatikan segala aspek kesehatan. 
                         Aspek tersebut antara lain makanan dan minuman yang dikonsumsi, berolahraga secara teratur dan memiliki tidur atau istirahat yang cukup.</p>
                 </div>
@@ -331,7 +331,7 @@
 
 <!-- JS -->
 <script type="text/javascript" src="{{ asset('asset/js/jquery-1.11.2.min.js') }}"></script>      <!-- jQuery -->
-<script type="text/javascript" src="{{ aseet('asset/js/responsiveCarousel.min.js') }}"></script>      <!-- Carousel -->
+<script type="text/javascript" src="{{ asset('asset/js/responsiveCarousel.min.js') }}"></script>      <!-- Carousel -->
 <script type="text/javascript" src="{{ asset('asset/js/templatemo-script.js') }}"></script>      <!-- Templatemo Script -->
 <script>
 
