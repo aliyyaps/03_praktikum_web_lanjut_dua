@@ -1,9 +1,11 @@
 @extends('layouts.main')
 @section('main')
+
 <!-- header image -->
 <div class="header-img-2">
 </div>
 <!-- end header image -->
+
 <!-- Welcome message -->
 <div class="welcome-container">
     <div class="container">
@@ -29,8 +31,11 @@
                 <div class="section-title-underline-blue"></div>
                 <hr class="section-title-underline">
                 <p class="small">Group 3 - TI 2F</p>
-            </div> <!-- col-lg-12 -->
-        </div> <!-- row -->
+            </div>
+            <!-- col-lg-12 -->
+        </div> 
+        
+        <!-- row -->
         <div class="row margin-bottom-30">
             <div class="col-lg-6 col-md-6 contact-left">
                 <h3 class="section-title-2 text-uppercase font-weight-300"><b>Our</b> <span class="blue-text">Information</span></h3>
@@ -79,7 +84,9 @@
                     </div>
                 </form>
             </div>
-        </div> <!-- row -->
+        </div>
+        
+        <!-- row -->
         <div class="row">
             <div class="col-lg-12">
                 <div class="google-map-container">
@@ -87,7 +94,9 @@
                 </div>
             </div>
         </div>
-    </div> <!-- container -->
+    </div>
+
+<!-- container -->
 </section>
 <div class="blue-divider effect1">
     <div class="dark-blue-bg"></div>
@@ -102,7 +111,7 @@
                 <ul>
                     <li><a href="/home">Home</a></li>
                     <li><a href="/about">About</a></li>
-                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/profile">Product</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
             </nav>
@@ -178,4 +187,5 @@
         loadGoogleMap();
     });
 </script>
+
 @endsection

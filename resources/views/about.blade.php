@@ -1,5 +1,6 @@
 @extends('layouts.main')
 @section('main')
+
 <!-- header image -->
 <div class="header-img-2"></div>
 <!-- end header image -->
@@ -81,7 +82,9 @@
                 <hr class="section-title-underline">
                 <p class="small">Ahli Kesehatan</p>
             </div>
-        </div> <!-- row -->
+        </div>
+        
+        <!-- row -->
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 text-center tm-about-container-2">
                 <img src="https://res.cloudinary.com/dk0z4ums3/image/upload/w_100,h_100,c_thumb,dpr_2.0/v1563855055/image_doctor/dr.%20Cindiawaty%20%20Josito%2C%20Sp.%20GK.jpg.jpg" alt="Image">
@@ -148,7 +151,7 @@
                 <ul>
                     <li><a href="/home">Home</a></li>
                     <li><a href="/about">About</a></li>
-                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/profile">Product</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
             </nav>
@@ -182,4 +185,5 @@
     </div>
 </section>
 <!-- end main content -->
+
 @endsection
