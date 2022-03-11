@@ -1,5 +1,6 @@
 @extends('layouts.main')
 @section('main')
+
 <!-- header image -->
 <div class="header-img-3"></div>
 <!-- end header image -->
@@ -10,8 +11,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="welcome-wrapper">
-                    <h2 class="welcome-title text-uppercase">Profile</h2>
-                    <img src="{{ asset('asset/img/welcome-divider-lines.png') }}" alt="Welcome divider" class="welcome-divider-lines-img">
+                    <h2 class="welcome-title text-uppercase">Product</h2>
+                    <img src="{{asset('asset/img/welcome-divider-lines.png')}}" alt="Welcome divider" class="welcome-divider-lines-img">
                     <p class="welcome-description">Berbagai macam cara untuk tetap hidup sehat. Dimulai dari menjaga pola makan serta olahraga yang teratur.</p>
                 </div>
             </div>
@@ -25,10 +26,10 @@
     <div class="container">
         <div class="row margin-bottom-30">
             <div class="col-lg-12 text-uppercase text-center">
-                <h2 class="section-title">Profile</h2>
+                <h2 class="section-title">Product</h2>
                 <div class="section-title-underline-blue"></div>
                 <hr class="section-title-underline">
-                <p class="small">Macam-macam Hidup Sehat</p>
+                <p class="small">MACAM-MACAM HIDUP SEHAT</p>
             </div>
         </div>
         <div class="row margin-bottom-30">
@@ -82,6 +83,36 @@
         </div>
     </div>
 </section>
+<section>
+    <div class = "container tm-position-relative">
+        <div class = "row">
+            <table class = "table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nama Product</th>
+                        <th scope="col">Manfaat</th>
+                        <th scope="col">Jenis</th>
+                        <th scope="col">Harga</th>
+                        <th scope="col">Gambar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        @foreach ($daftar as $d)
+                        <tr>
+                            <td>{{$d ->id}}</td>
+                            <td>{{$d ->product}}</td>
+                            <td>{{$d ->manfaat}}</td>
+                            <td>{{$d ->jenis}}</td>
+                            <td>{{$d ->harga}}</td>
+                            <td><img src="{{$d->gambar}}"></td>
+                        </tr>
+                        @endforeach
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
 <div class="blue-divider effect1">
     <div class="dark-blue-bg"></div>
     <div class="blue-divider-bg-graphic"></div>
@@ -95,7 +126,7 @@
                 <ul>
                     <li><a href="/home">Home</a></li>
                     <li><a href="/about">About</a></li>
-                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/profile">Product</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
             </nav>
@@ -131,9 +162,9 @@
 <!-- end main content -->
 
 <!-- JS -->
-<script type="text/javascript" src="{{ asset('asset/js/jquery-1.11.2.min.js') }}"></script>     <!-- jQuery -->
-<script type="text/javascript" src="{{ asset('asset/js/isotope.pkgd.min.js') }}"></script>      <!-- Isotope, http://isotope.metafizzy.co -->
-<script type="text/javascript" src="{{ asset('asset/js/templatemo-script.js') }}"></script>     <!-- Templatemo Script -->
+<script type="text/javascript" src="{{asset('asset/js/jquery-1.11.2.min.js')}}"></script>      <!-- jQuery -->
+<script type="text/javascript" src="{{asset('asset/js/isotope.pkgd.min.js')}}"></script>      <!-- Isotope, http://isotope.metafizzy.co -->
+<script type="text/javascript" src="{{asset('asset/js/templatemo-script.js')}}"></script>      <!-- Templatemo Script -->
 <script>
     // All images are loaded. Call isotope
     $(window).load(function() {
@@ -163,4 +194,5 @@
         });
     });
 </script>
+
 @endsection
